@@ -12,7 +12,7 @@ const publishedImages = new Set([
   'logo.png',
   'method-architecture.png',
   'method-kernel-dtw.png',
-  'system-home.png',
+  'system-home-v2.png',
 ])
 
 export default defineConfig({
@@ -31,6 +31,7 @@ export default defineConfig({
           'interface-network-graph.png',
           'kernel-dtw.png',
           'ppt-contact-sheet.jpg',
+          'system-home.png',
           'system-screen-1.png',
           'system-screen-2.png',
         ]) {
@@ -38,6 +39,7 @@ export default defineConfig({
             rmSync(join(process.cwd(), 'dist', 'images', name), { force: true })
           }
         }
+        rmSync(join(process.cwd(), 'dist', 'videos', 'full-demo.mp4'), { force: true })
       },
     },
   ],

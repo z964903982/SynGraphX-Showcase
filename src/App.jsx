@@ -73,6 +73,7 @@ function App() {
             <p className="hero-text">
               面向证券市场隐性关联发现，SynGraphX 将时间序列相似性、复杂网络社区、产业链知识图谱与混合检索增强生成结合，辅助识别“为何联动、如何传导、是否可验证”的研究线索。
             </p>
+            <p className="version-mark">Showcase updated: homepage + full walkthrough video</p>
             <div className="hero-actions" aria-label="项目入口">
               <a className="button primary" href={links.github} target="_blank" rel="noreferrer">
                 GitHub
@@ -89,7 +90,7 @@ function App() {
             </div>
           </div>
           <figure className="hero-figure">
-            <img src={asset('images/system-home.png')} alt="SynGraphX 系统首页" />
+            <img src={asset('images/system-home-v2.png')} alt="SynGraphX 系统首页" />
             <figcaption>系统首页：市场概览、核心功能入口与证券关联分析工作台</figcaption>
           </figure>
         </section>
@@ -149,7 +150,7 @@ function App() {
             <p className="eyebrow">Full Walkthrough</p>
             <h3>完整系统演示</h3>
           </div>
-          <video controls preload="metadata" src={asset('videos/full-demo.mp4')} />
+          <video controls preload="metadata" src={asset('videos/full-demo-v2.mp4')} />
         </article>
         <div className="screenshots">
           <figure>

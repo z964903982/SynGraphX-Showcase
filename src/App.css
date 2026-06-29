@@ -146,6 +146,13 @@ h3 {
   max-width: 500px;
 }
 
+.version-mark {
+  color: #8fbaff;
+  font-size: 0.84rem;
+  font-weight: 800;
+  margin: 18px 0 0;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
