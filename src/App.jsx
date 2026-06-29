@@ -89,8 +89,8 @@ function App() {
             </div>
           </div>
           <figure className="hero-figure">
-            <img src={asset('images/interface-dashboard.png')} alt="SynGraphX 最新系统界面总览" />
-            <figcaption>最新系统界面：市场监控、个股分析、关联网络与解释结果聚合</figcaption>
+            <img src={asset('images/system-home.png')} alt="SynGraphX 系统首页" />
+            <figcaption>系统首页：市场概览、核心功能入口与证券关联分析工作台</figcaption>
           </figure>
         </section>
       </header>
@@ -144,6 +144,13 @@ function App() {
           <p className="eyebrow">System Demo</p>
           <h2>系统界面与功能演示</h2>
         </div>
+        <article className="full-video">
+          <div>
+            <p className="eyebrow">Full Walkthrough</p>
+            <h3>完整系统演示</h3>
+          </div>
+          <video controls preload="metadata" src={asset('videos/full-demo.mp4')} />
+        </article>
         <div className="screenshots">
           <figure>
             <img src={asset('images/interface-network-orange.png')} alt="SynGraphX 证券关联网络界面" />
@@ -164,19 +171,19 @@ function App() {
         </div>
         <div className="video-grid">
           <article>
-            <h3>智能助手</h3>
+            <h3>智能助手片段</h3>
             <video controls preload="metadata" src={asset('videos/ai-assistant-demo.mp4')} />
           </article>
           <article>
-            <h3>个股查询</h3>
+            <h3>个股查询片段</h3>
             <video controls preload="metadata" src={asset('videos/stock-query-demo.mp4')} />
           </article>
           <article>
-            <h3>规则选股</h3>
+            <h3>规则选股片段</h3>
             <video controls preload="metadata" src={asset('videos/rule-selection-demo.mp4')} />
           </article>
           <article>
-            <h3>新闻舆情</h3>
+            <h3>新闻舆情片段</h3>
             <video controls preload="metadata" src={asset('videos/news-sentiment-demo.mp4')} />
           </article>
         </div>

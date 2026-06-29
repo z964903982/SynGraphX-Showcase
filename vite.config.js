@@ -12,6 +12,7 @@ const publishedImages = new Set([
   'logo.png',
   'method-architecture.png',
   'method-kernel-dtw.png',
+  'system-home.png',
 ])
 
 export default defineConfig({

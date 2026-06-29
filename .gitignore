@@ -3,5 +3,6 @@ dist
 npm-cache
 .npm-cache
 public/docs/
+.video-tools/
 .DS_Store
 *.local

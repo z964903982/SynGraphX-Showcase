@@ -45,8 +45,8 @@ video {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 1180px;
-  padding: 22px 24px;
+  max-width: 1280px;
+  padding: 22px 28px;
 }
 
 .brand {
@@ -81,11 +81,15 @@ video {
 .hero-grid {
   align-items: center;
   display: grid;
-  gap: 48px;
-  grid-template-columns: minmax(0, 0.86fr) minmax(420px, 1.14fr);
+  gap: 72px;
+  grid-template-columns: minmax(320px, 0.78fr) minmax(560px, 1.22fr);
   margin: 0 auto;
-  max-width: 1180px;
-  padding: 48px 24px 68px;
+  max-width: 1280px;
+  padding: 46px 28px 70px;
+}
+
+.hero-copy {
+  max-width: 510px;
 }
 
 .eyebrow {
@@ -109,7 +113,7 @@ p {
 }
 
 h1 {
-  font-size: clamp(3.1rem, 9vw, 6.3rem);
+  font-size: clamp(3rem, 7vw, 5.7rem);
   line-height: 0.98;
   margin-bottom: 18px;
 }
@@ -139,7 +143,7 @@ h3 {
 .hero-text {
   color: #c4d1e5;
   font-size: 1.02rem;
-  max-width: 680px;
+  max-width: 500px;
 }
 
 .hero-actions {
@@ -167,7 +171,10 @@ h3 {
 }
 
 .hero-figure {
+  justify-self: end;
   margin: 0;
+  max-width: 740px;
+  width: 100%;
 }
 
 .hero-figure img,
@@ -182,7 +189,11 @@ h3 {
 }
 
 .hero-figure img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top center;
   padding: 10px;
+  width: 100%;
 }
 
 figcaption {
@@ -284,7 +295,7 @@ figcaption {
   display: grid;
   gap: 18px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-bottom: 28px;
+  margin: 28px 0;
 }
 
 .screenshots figure {
@@ -305,6 +316,25 @@ figcaption {
   display: grid;
   gap: 18px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.full-video {
+  background: #ffffff;
+  border: 1px solid #dfe6f1;
+  border-radius: 8px;
+  box-shadow: 0 18px 40px rgba(12, 24, 45, 0.1);
+  padding: 18px;
+}
+
+.full-video h3 {
+  margin-bottom: 14px;
+}
+
+.full-video video {
+  aspect-ratio: 16 / 9;
+  background: #0e1c33;
+  border-radius: 6px;
+  width: 100%;
 }
 
 .video-grid article {
@@ -413,7 +443,14 @@ figcaption {
   }
 
   .hero-grid {
+    gap: 34px;
     padding-top: 34px;
+  }
+
+  .hero-copy,
+  .hero-text,
+  .hero-figure {
+    max-width: none;
   }
 
   .method-cards {
